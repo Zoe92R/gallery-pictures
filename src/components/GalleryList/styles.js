@@ -23,4 +23,5 @@ export const GalleyImg = styled.img`
   width: 100%;
   aspect-ratio: 1;
   object-fit: cover;
+  background-color: #e1e1e1;
 `;

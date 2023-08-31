@@ -7,13 +7,15 @@ const GalleryList = (props) => {
 
   return (
     <GalleryListContainer>
-      {images.map((image) => (
-        <GalleyImg
-          key={image.id}
-          alt={`img-${image.download_url}`}
-          src={image.download_url}
-          loading="lazy"
-        />
+      {images.map((image, index) => (
+        <div key={image.id + index}>
+          {image.download_url && (
+            <GalleyImg
+              alt={`img-${image.download_url}`}
+              src={image.download_url}
+            />
+          )}
+        </div>
       ))}
     </GalleryListContainer>
   );
