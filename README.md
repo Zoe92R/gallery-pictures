@@ -1,70 +1,63 @@
-# Getting Started with Create React App
+# Gallery pictures React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
+The Gallery Pictures React App is a dynamic web application built using React that offers an immersive experience for viewing a gallery of images sourced from the Picsum Photos API. This app is designed to be responsive and user-friendly across various devices, including desktops, tablets, and phones.
 
-## Available Scripts
+## Features
+1. Image Gallery
+Utilizes the Picsum Photos API to fetch a collection of images.
+Renders images within a responsive gallery layout, ensuring a seamless viewing experience on different screen sizes.
+2. Infinite Scrolling
+Implements infinite scrolling to enhance user experience and load a new set of images as the user scrolls.
+Incorporates smooth scrolling animations for an engaging interface.
+Responsively adapts to all design layouts, including desktop, tablet, and phone.
+3. Date Picker Component
+Features a Date Picker component that is fixed to the top of the page.
+Allows users to select a specific date.
+Upon selecting a date:
+Clears the current gallery, removing existing images.
+Fetches and displays a new set of picture.
 
-In the project directory, you can run:
+## Getting Started
 
-### `npm start`
+### Prerequisites
+Node.js and npm installed on your machine.
 
+#### Follow these steps to get a copy of the project up and running on your local machine for development.
+
+Clone the repository to your local machine: 
+```bash
+git clone https://github.com/Zoe92R/gallery-pictures.git
+```
+
+Navigate to the project directory and install the project dependencies:
+```bash
+npm i
+```
+
+To run the app locally, execute the following command:
+```bash
+npm start
+```
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Assumptions:
+- Development Assessment Time: 6 Hours.
+- Compatibility Scope: The app is designed to be compatible with tablets, mobile devices, and desktops; specific adjustments for larger screens are not included.
+- Every Time the App Starts, Images Are Automatically Fetched.
+- Consistent Number of Images for each fetch Across Devices.
+- The error handling component in this app is minimal and provides only basic error handling functionality.
+- Date Picker Behavior: Gallery Reloads to Page 1.
 
-### `npm test`
+## Future Improvements:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+While the Gallery Pictures React App is fully functional and serves its intended purpose, there are opportunities for further enhancements and refinements. If additional time were available, here are some areas where improvements could be considered:
 
-### `npm run build`
+- Advanced error handling component
+- Image fetching optimization and caching
+- Scroll animation
+- Skelaton UI Improvements
+- Displaying even number of images per row for better UI
+- Dynamic Pagination: The app dynamically updates the "hasMore" state to determine if more images are available from the Picsum API before initiating the next fetch operation.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
