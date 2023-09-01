@@ -43,7 +43,6 @@ Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 ## Assumptions:
-- Development Assessment Time: 6 Hours.
 - Compatibility Scope: The app is designed to be compatible with tablets, mobile devices, and desktops; specific adjustments for larger screens are not included.
 - Every Time the App Starts, Images Are Automatically Fetched.
 - Consistent Number of Images for each fetch Across Devices.
