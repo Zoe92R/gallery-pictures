@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
-const breakpoint768 = "768px";
-const breakpoint480 = "480px";
+import { BREAK_POINT_LARGE, BREAK_POINT_MEDIUM } from "../../conts/breakpoints";
 
 export const GalleryListContainer = styled.div`
   display: grid;
@@ -9,11 +8,11 @@ export const GalleryListContainer = styled.div`
   gap: 16px;
   width: 85vw;
 
-  @media (max-width: ${breakpoint768}) {
+  @media (max-width: ${BREAK_POINT_LARGE}) {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  @media (max-width: ${breakpoint480}) {
+  @media (max-width: ${BREAK_POINT_MEDIUM}) {
     grid-template-columns: 1fr;
   }
 `;
