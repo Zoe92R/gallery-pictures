@@ -1,10 +1,10 @@
-import GalleryPage from "./pages/GalleyPage/GalleryPage";
+import MainPage from "./pages/MainPage/MainPage";
 import { AppContainer } from "./styles";
 
 function App() {
   return (
     <AppContainer>
-      <GalleryPage />
+      <MainPage />
     </AppContainer>
   );
 }
